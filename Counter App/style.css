@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,regular,600,800);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: Nunito Sans;
+   
+}
+html , body{
+    height: 100%;
+    width: 100%;
+   
+}
+.coainter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 140%;
+background-color: rgba(0, 0, 235, 0.737);
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+gap: 2rem;
+    width: 50%;
+    padding: 5rem;
+    backdrop-filter: blur(20px);
+background-color: rgba(0, 0, 0, 0.594);
+ height: 100%;
+ border-radius: 10px;
+ margin-top: 1rem;
+}
+.main h1{
+    font-size: 2.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(204, 255, 0);
+    letter-spacing: 0.3rem;
+}
+#counter{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white
+}
+.btn button{
+    width: 8rem;
+    height:4rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+#resetBtn{
+  
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+#ID{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(233, 183, 0);
+    padding: 0.5rem;
+    width: 100%;
+   
+
+}
+#ID input{
+    outline: none;
+    padding: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+footer{
+ margin-top: 1rem;
+    width: 100%;
+    background-color: #000000bd;
+    text-align: center;
+    padding: 1rem;
+    backdrop-filter: blur(0px);
+}
+footer p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: rgb(251, 255, 0);
+    text-transform: uppercase;
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+.socialmedia a {
+    font-size: 2.3rem; 
+    color: rgb(234, 234, 234)
+}
+@media ( max-width: 768px) {
+    .main{
+        width: 90%;
+        height: 100%;
+    }
+    .btn button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .main h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: rgb(204, 255, 0);
+        letter-spacing: 0.3rem;
+    }
+    #resetBtn{
+      padding: 1rem;
+   
+      
+    }
+}
