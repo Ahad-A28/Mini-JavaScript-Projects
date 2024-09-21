@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,regular,600,800);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito Sans;
+    overflow-x: hidden;
+}
+
+   
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    --background:white ;
+    --textColor:black;
+    --elementColor : white;
+ background-color: var(--background);
+ color: var(--textColor);
+
+ 
+}
+body.dark{
+    --background:hsl(207, 26%, 17%) ;
+    --textColor:white;
+    --elementColor: hsl(209, 23%, 22%);   
+}
+ /* Header Start */
+header{
+ 
+    padding: 0.8vw;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.6);
+    user-select: none;
+     position: sticky;
+    top: 0;
+    backdrop-filter: blur(20px);
+    background-color: var(--elementColor);
+    backdrop-filter: blur(10px);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 1vw;
+max-width: 91vw;
+margin-inline: auto;
+background-color: var(--elementColor);
+backdrop-filter: blur(20px);
+}
+
+ 
+nav p{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+#light-mode{
+    display: none;
+    cursor: pointer;
+    
+}
+p i{
+font-size: 1.3rem;
+     padding: 1vw;
+}
+ /* Header End */
+
+/* Card Start */
+.card-container-main{
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    
+   gap: 35px;
+    flex-wrap: wrap;
+ 
+    background-color: var(--elementColor);
+ 
+}
+.card-container{
+border-radius: 10px;
+max-width: 300px;
+ 
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: var(--elementColor);
+}
+ 
+.card-container:hover{
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.card{
+    text-decoration-line:none;
+    color: black;
+}
+.card-container img{
+    width: 100%;
+ object-fit: cover;
+ object-position: center;
+ height: fit-content;
+}
+
+.text{
+    padding: 1vw;
+   font-size: 1rem;
+   background-color: var(--elementColor);
+   color: var(--textColor);
+}
+.text p{
+    margin-top: 1vw;
+    font-weight: 900;
+   color: inherit;
+}
+.text h3{
+    font-size: 1.8rem;
+}
+.loading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+/* Card End */
+/* Search Start*/
+.search-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+ padding: 1.5rem;
+ 
+ background-color: var(--elementColor);
+}
+.input-container{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    
+    border-radius: 5px;
+    padding: 0.4vw;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.5);
+ 
+
+}
+.input-container input{
+    width: 100%;
+   padding: 0.4rem; 
+    font-size: 1.3rem;
+font-weight: 500;
+ outline:none;
+border: none;
+background-color: var(--elementColor);
+color: var(--textColor);
+}
+.input-container i{
+    font-size: 1.3rem;
+  cursor: pointer;
+
+ padding: 0.5rem;
+}
+
+.filterByRegion{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: var(--elementColor);
+    color: var(--textColor);
+}
+
+
+
+/* Search End */
