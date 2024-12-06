@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo{
+    background-image: url(/src/assets/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+ol {
+    list-style-type: decimal; /* Ensure decimal numbering */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+::-webkit-scrollbar{
+     width: 0.3rem;/* Set scrollbar width */
+}
+
+ 
+
+::-webkit-scrollbar-thumb {
+    background: #3e72e2; /* Set background color of the scrollbar thumb */
+    border-radius: 10px; /* Set border radius of the scrollbar thumb */
+}
+body{
+    background-image: url("/src/assets/nature.avif");
+    background-size: cover;
+    background-position: center;
+
+}
+footer{
+    position: relative;
+bottom: 0;
+    margin-top: 1rem;
+       width: 100%;
+       background-color: #000000bd;
+       text-align: center;
+       padding: 1rem;
+       backdrop-filter: blur(0px);
+       height: 6rem;
+   }
+   footer p{
+       font-size: 1rem;
+       font-weight: 900;
+       color: rgb(251, 255, 0);
+       text-transform: uppercase;
+   }
+   .socialmedia{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 1rem;
+       width: 100%;
+     
+   }
+   .socialmedia a {
+       font-size: 2rem; 
+       color: rgb(234, 234, 234)
+   }
